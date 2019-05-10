@@ -36,9 +36,9 @@ endif(UNIX)
 #set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 find_package(Concurrency REQUIRED)
 find_package(Filter REQUIRED)
-find_package(OpenSim REQUIRED)
-find_package(Simbody REQUIRED)
-find_package(ViconSDK QUIET)
+#find_package(OpenSim REQUIRED)
+#find_package(Simbody REQUIRED)
+#find_package(ViconSDK QUIET)
 
 # Choose common build locations for executables and libraries
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
