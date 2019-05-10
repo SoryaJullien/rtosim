@@ -17,8 +17,8 @@
 #include "rtosim/EndOfData.h"
 #include "rtosim/Mapper.h"
 #include "rtosim/ArrayConverter.h"
-
 #include <OpenSim/OpenSim.h>
+
 #include <chrono>
 #include <thread>
 #include <string>

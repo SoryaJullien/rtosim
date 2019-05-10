@@ -13,20 +13,20 @@
 # limitations under the License.                                            #
 # --------------------------------------------------------------------------#
 
-add_executable(rtosim_ik_from_file  mainInverseKinematicsFromFile.cpp)
-target_link_libraries(rtosim_ik_from_file rtosim)
+#add_executable(rtosim_ik_from_file  mainInverseKinematicsFromFile.cpp)
+#target_link_libraries(rtosim_ik_from_file rtosim)
 
-add_executable(rtosim_id_from_file mainInverseDynamicsfromFile.cpp)
-target_link_libraries(rtosim_id_from_file rtosim)
+#add_executable(rtosim_id_from_file mainInverseDynamicsfromFile.cpp)
+#target_link_libraries(rtosim_id_from_file rtosim)
 
-add_executable(rtosim_ik_id_from_file mainInverseKinematicsInverseDynamicsFromFile.cpp)
-target_link_libraries(rtosim_ik_id_from_file rtosim)
+#add_executable(rtosim_ik_id_from_file mainInverseKinematicsInverseDynamicsFromFile.cpp)
+#target_link_libraries(rtosim_ik_id_from_file rtosim)
 
-install(TARGETS rtosim_ik_from_file rtosim_id_from_file rtosim_ik_id_from_file
-        EXPORT RTOSIM_Targets
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
+#install(TARGETS rtosim_ik_from_file rtosim_id_from_file rtosim_ik_id_from_file
+#        EXPORT RTOSIM_Targets
+#        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+#        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+#        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR})
 
 if(${VICONSDK_FOUND})
     add_executable(rtosim_ik_id_from_nexus mainInverseKinematicsInverseDynamicsFromNexus.cpp)

@@ -14,14 +14,14 @@
 # --------------------------------------------------------------------------#
 
 set(InputDevice_SOURCES
-    MarkersFromTrc.cpp
+    #MarkersFromTrc.cpp
     ExternalForcesFromX.cpp
     ExternalForcesFromStorageFile.cpp
     GeneralisedCoordinatesFromX.cpp
     GeneralisedCoordinatesFromStorageFile.cpp)
 
 set(InputDevice_HEADERS
-    rtosim/MarkersFromTrc.h
+    #rtosim/MarkersFromTrc.h
     rtosim/InputDevice.h
     rtosim/ExternalForcesFromX.h
     rtosim/ExternalForcesFromStorageFile.h
@@ -50,9 +50,9 @@ add_library(InputDevice
 
 target_include_directories(InputDevice PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
                                        $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
-                                       ${OPENSIMSIMBODY_INCLUDE_DIRS})
+                                       ${OpenSim_INCLUDE_DIRS} ${Simbody_INCLUDE_DIRS})
 
-target_link_libraries(InputDevice Common Utilities ${OPENSIMSIMBODY_LIBRARIES})
+target_link_libraries(InputDevice Common Utilities ${OpenSim_LIBRARIES} ${Simbody_LIBRARIES})
 if(WIN32)
     target_compile_definitions(InputDevice PUBLIC WIN32) #Hack to get OpenSim 3.3 to work
 endif()

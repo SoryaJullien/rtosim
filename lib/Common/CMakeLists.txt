@@ -54,8 +54,8 @@ source_group("Sources" FILES ${Common_SOURCES} ${Common_TEMPLATE_IMPLEMENTATION}
 # Define target
 add_library(Common ${Common_SOURCES} ${Common_HEADERS} ${Common_QUEUES_HEADERS} ${Common_TEMPLATE_IMPLEMENTATION})
 set_target_properties(Common PROPERTIES LINKER_LANGUAGE CXX)
-target_link_libraries(Common rtb::Concurrency ${OPENSIMSIMBODY_LIBRARIES})
-target_include_directories(Common  PRIVATE ${OPENSIMSIMBODY_INCLUDE_DIRS}
+target_link_libraries(Common rtb::Concurrency ${OpenSim_LIBRARIES} ${Simbody_LIBRARIES})
+target_include_directories(Common  PRIVATE ${OpenSim_INCLUDE_DIRS} ${Simbody_INCLUDE_DIRS}
                                    PUBLIC $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
                                    $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>)
 

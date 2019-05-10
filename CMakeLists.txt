@@ -33,10 +33,11 @@ if(UNIX)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
 endif(UNIX)
 
-set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
+#set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 find_package(Concurrency REQUIRED)
 find_package(Filter REQUIRED)
 find_package(OpenSim REQUIRED)
+find_package(Simbody REQUIRED)
 find_package(ViconSDK QUIET)
 
 # Choose common build locations for executables and libraries
