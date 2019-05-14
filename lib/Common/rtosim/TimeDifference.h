@@ -23,6 +23,17 @@
 #include <vector>
 #include <tuple>
 #include <ostream>
+
+#include "rtosim/EndOfData.h"
+#include "rtosim/QueuesSync.h"
+using std::chrono::steady_clock;
+using std::chrono::duration_cast;
+#include <algorithm>
+#include <numeric>
+#include <iterator>
+#include <stdexcept>
+#include <fstream>
+
 //calculates the time that takes a frame to
 //travel from one queue to the other
 
@@ -121,5 +132,4 @@ namespace rtosim {
 
 }
 
-#include "TimeDifference.cpp"
 #endif

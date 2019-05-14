@@ -21,6 +21,11 @@
 #include "rtosim/QueueData.h"
 #include "rtosim/FileLogger.h"
 
+#include "rtosim/EndOfData.h"
+#include <iostream>
+#include <vector>
+#include <SimTKcommon.h>
+
 namespace rtosim {
 
     template<typename DataType>
@@ -51,5 +56,4 @@ namespace rtosim {
     };
 }
 
-#include "QueueToFileLogger.cpp"
 #endif

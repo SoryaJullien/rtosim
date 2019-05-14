@@ -19,6 +19,7 @@
 //#include "ceinms/ExternalForceData.h"
 #include "rtosim/queue/MultipleExternalForcesQueue.h"
 #include "rtosim/GeneralisedCoordinatesData.h"
+#include "rtosim/FileSystem.h"
 
 #include <vector>
 #include <list>
@@ -61,5 +62,4 @@ namespace rtosim {
     };
 }
 
-#include "FileLogger.cpp"
 #endif

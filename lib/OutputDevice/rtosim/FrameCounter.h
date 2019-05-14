@@ -17,6 +17,7 @@
 #define rtosim_FrameCounter_h
 
 #include "rtosim/StopWatch.h"
+#include "rtosim/EndOfData.h"
 #include <chrono>
 #include <iostream>
 
@@ -36,5 +37,4 @@ namespace rtosim{
     };
 }
 
-#include "FrameCounter.cpp"
 #endif

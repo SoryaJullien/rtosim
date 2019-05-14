@@ -13,7 +13,7 @@
  * limitations under the License.                                             *
  * -------------------------------------------------------------------------- */
 
-#include "rtosim/EndOfData.h"
+#include "rtosim/FrameCounter.h"
 
 namespace rtosim {
 

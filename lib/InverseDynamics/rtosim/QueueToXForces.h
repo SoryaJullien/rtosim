@@ -27,7 +27,7 @@
 #include "rtosim/queue/MultipleExternalForcesQueue.h"
 #include "rtosim/queue/SingleExternalForceQueue.h"
 #include "rtosim/ExternalForceProperties.h"
-#include "rtosim/JointContactFromOpensim.h"
+//#include "rtosim/JointContactFromOpensim.h"
 
 namespace rtosim {
 

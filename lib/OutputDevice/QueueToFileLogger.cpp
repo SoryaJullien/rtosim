@@ -13,10 +13,7 @@
  * limitations under the License.                                             *
  * -------------------------------------------------------------------------- */
 
-#include "rtosim/EndOfData.h"
-#include <iostream>
-#include <vector>
-#include <SimTKcommon.h>
+#include "rtosim/QueueToFileLogger.h"
 
 namespace rtosim{
 

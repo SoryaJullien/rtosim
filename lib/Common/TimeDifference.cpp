@@ -13,17 +13,7 @@
  * limitations under the License.                                             *
  * -------------------------------------------------------------------------- */
 
-#include "rtosim/EndOfData.h"
-#include "rtosim/QueuesSync.h"
-#include <chrono>
-using std::chrono::steady_clock;
-using std::chrono::duration_cast;
-#include <algorithm>
-#include <numeric>
-#include <iterator>
-#include <list>
-#include <stdexcept>
-#include <fstream>
+#include "TimeDifference.h"
 
 namespace rtosim {
 

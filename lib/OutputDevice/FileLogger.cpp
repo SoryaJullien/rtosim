@@ -13,7 +13,7 @@
  * limitations under the License.                                             *
  * -------------------------------------------------------------------------- */
 
-#include "rtosim/FileSystem.h"
+#include "rtosim/FileLogger.h"
 
 namespace rtosim {
 
